@@ -2,6 +2,9 @@ name: "RSync"
 description: ""
 author: "Peter Kracik"
 inputs:
+  privateKey:
+    description: "Private key"
+    require: false
   command:
     description: "rsync command(s) to execute"
     required: true
