@@ -5,6 +5,7 @@ inputs:
   privateKey:
     description: "Private key"
     require: false
+    default: ""
   command:
     description: "rsync command(s) to execute"
     required: true
