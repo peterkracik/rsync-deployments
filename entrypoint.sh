@@ -10,4 +10,9 @@ chmod 600 "$SSH_PATH/deploy_key"
 
 
 # Do deployment
-sh -c "rsync $1 -e 'ssh -i $SSH_PATH/deploy_key -o StrictHostKeyChecking=no' $2 $GITHUB_WORKSPACE/ $3"
+#sh -c "rsync $1 -e 'ssh -i $SSH_PATH/deploy_key -o StrictHostKeyChecking=no' $2 $GITHUB_WORKSPACE/ $3"
+for cmd in ${INPUT_COMMANDS}; do
+  echo -e "${BLUE}Syncinc: ${cmd}"
+  sh -c "${cmd}"
+  echo ""
+done
