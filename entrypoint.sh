@@ -2,6 +2,9 @@
 
 set -eu
 
+BLUE='\033[0;34m'
+NORMAL='\033[0m'
+
 # Set deploy key
 SSH_PATH="$HOME/.ssh"
 mkdir "$SSH_PATH"
