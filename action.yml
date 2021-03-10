@@ -2,7 +2,7 @@ name: "RSync"
 description: ""
 author: "Peter Kracik"
 inputs:
-  commands:
+  command:
     description: "rsync command(s) to execute"
     required: true
 runs:
